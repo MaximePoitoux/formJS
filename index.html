@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form </title>
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hamburger_icon">
+        <span class="color_span"></span>
+    </div>
+
+    <div class="lightDark">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fa fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+
+    <div class="container1">
+        <div class="divMenu">    
+            <div class="menu nav">
+                <h1 class="">Projects</h1>
+                <a href="https://maximepoitoux.github.io/" target="_blank" class="logo">Portfolio</a>
+                <a href="https://pixbattle.com/" target="_blank" class="logo">Pix Battle</a>
+                <a href="https://thunder-wild-code-school.netlify.app/" target="_blank" class="logo">Thunder</a>
+                <a href="https://movie-app-maxime.netlify.app/" target="_blank" class="logo">Movie App</a>
+                <a href="https://richard-mille-maxime-poitoux.netlify.app/" target="_blank" class="logo">Richard Mille</a>
+                <a href="https://to-do-list-maxime-poitoux.netlify.app/" target="_blank" class="logo">To Do List</a>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="container3">
+                <div class="header">
+                    <h2>Create Account</h2>
+                </div>
+                <form class="form" id="form">
+                    <div class="formControl">
+                        <label>Username</label>
+                        <input type="text" placeholder="Maxime" id="username">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="formControl">
+                        <label>Email</label>
+                        <input type="text" placeholder="maxime@hotmail.fr" id="email">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="formControl">
+                        <label>Password</label>
+                        <input type="password" placeholder="Password" id="password">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="formControl">
+                        <label>Password check</label>
+                        <input type="password" placeholder="Confirm Password" id="passwordCheck">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="countContainer">
+            <p>This page has</p>
+            <h1 id="count">0</h1>
+            <p>views</p>
+        </div> 
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
