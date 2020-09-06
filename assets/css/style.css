@@ -312,7 +312,6 @@ body.dark {
 }
 
 .modal-container {
-    /* display: none; */
     position: fixed;
     pointer-events: none;
     opacity: 0;
