@@ -10,4 +10,4 @@ I chose to create a Form and a Navbar only in JavaScript, without any framework.
 
 # Link
 
-Take a look [formJS](formjs-maxime-poitoux.netlify.app/) !
+Take a look [formJS](https://formjs-maxime-poitoux.netlify.app/) !
