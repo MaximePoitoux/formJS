@@ -5,4 +5,5 @@ I chose to create a Form and a Navbar only in JavaScript, without any framework.
 
 # Screens  
  
-![](/screens.png)
+![img](https://imgur.com/gallery/kt7dPsQ.png)
+
