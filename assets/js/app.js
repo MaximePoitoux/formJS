@@ -10,6 +10,9 @@ const email = document.querySelector("#email"); // INPUT
 const password = document.querySelector("#password"); // INPUT
 const passwordCheck = document.querySelector("#passwordCheck"); // INPUT
 const countElement = document.querySelector("#count"); // COUNT VIEWS
+const openModal = document.querySelector("#openModal"); // BUTTON OPEN MODAL
+const closeModal = document.querySelector("#closeModal") // BUTTON CLOSE MODAL
+const modalContainer = document.querySelector("#modal_container"); // MODAL CONTAINER
 
 hamburgerIcon.addEventListener("click", () => {
     nav.classList.toggle("nav_open");
@@ -106,8 +109,12 @@ function isPassword(password) {
     return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/.test(password);
 }
 
+
+// CALLED THE FUNCTION TO COUNT THE VISITORS
 updateVisitCount();
 
+
+// CREATED FUNCTION TO CONSUME AN API TO COUNT THE VISITORS
 function updateVisitCount() {
     fetch("https://api.countapi.xyz/update/maxime/maxime/?amount=1")
     .then(res => res.json())
@@ -115,3 +122,13 @@ function updateVisitCount() {
         countElement.innerHTML = res.value;
     })
 }
+
+// EVENT TO OPEN MODAL
+openModal.addEventListener("click", () => {
+    modalContainer.classList.add("show");
+})
+
+// EVENT TO CLOSE MODAL
+closeModal.addEventListener("click", () => {
+    modalContainer.classList.remove("show");
+})

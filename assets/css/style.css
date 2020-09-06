@@ -94,7 +94,7 @@ body.dark {
 
 .menu h1 {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 80px;
     color: #55E6C1;
 }
 
@@ -293,6 +293,93 @@ body.dark {
     margin-top: -8px;
 }
 
+#openModal {
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: inherit;
+    border-radius: 50%;
+}
+
+#closeModal {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    border: none;
+    background-color: white;
+    outline: 0;
+}
+
+.modal-container {
+    /* display: none; */
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3 ease;
+}
+
+.modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-container .modal {
+    position: relative;
+    display: flex;
+    background-color: white;
+    width: 500px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal h1 {
+    padding-bottom: 20px;
+}
+
+#openModal {
+    top: 1.5em;
+    left: 6em;
+}
+
+.fa-github {
+    font-size: 3em;
+    color: grey;
+    border-radius: 50%;
+}
+
+.fa-github:hover {
+    color: black;
+}
+
+.fa-times-circle {
+    color: #ef4c4c;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.fa-book {
+    color: grey;
+    font-size: 3rem;
+}
+
+.fa-book:hover {
+    color: black;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 640px) {
     .container1 {
@@ -321,6 +408,10 @@ body.dark {
         height: 0;
     }
 
+    .menu h1 {
+        padding-top: 20px;
+    }
+
     .menu.nav.nav_open {
         height: 400px;
         width: 100vw;
@@ -330,5 +421,10 @@ body.dark {
     .lightDark {
         top: 0.7em;
         left: -1em;
+    }
+
+    #openModal {
+        top: 0.7em;
+        left: 1em;
     }
 }
