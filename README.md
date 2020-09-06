@@ -6,4 +6,5 @@ I chose to create a Form and a Navbar only in JavaScript, without any framework.
 # Screens  
  
 ![img](https://i.imgur.com/A8FAIns.png)
+![img](https://i.imgur.com/hFmT4P5.png)
 
