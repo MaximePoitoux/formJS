@@ -298,8 +298,12 @@ body.dark {
     border: none;
     cursor: pointer;
     outline: none;
-    background-color: inherit;
-    border-radius: 50%;
+    background-color: black;
+    opacity: 0.3;
+    border-radius: 15%;
+    padding: 5px;
+    top: 1.5em;
+    left: 6em;
 }
 
 #closeModal {
@@ -349,19 +353,15 @@ body.dark {
     padding-bottom: 20px;
 }
 
-#openModal {
-    top: 1.5em;
-    left: 6em;
-}
-
 .fa-github {
     font-size: 3em;
-    color: grey;
+    color: white;
     border-radius: 50%;
 }
 
-.fa-github:hover {
-    color: black;
+#openModal:hover {
+    background-color: black;
+    opacity: 1;
 }
 
 .fa-times-circle {
@@ -425,5 +425,9 @@ body.dark {
     #openModal {
         top: 0.7em;
         left: 1em;
+    }
+
+    .fa-github {
+        font-size: 2.5em;
     }
 }
